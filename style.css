@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Source+Code+Pro:wght@200;300;400;500;600;700;900&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.container{
+  width: 1300px;
+  max-width: 100%;
+  margin: auto;
+  padding: 0 4rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/* Start Header */
+
+.header{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Start Navbar */
+
+.navbar {
+  box-shadow: 0 0 10px rgba(64, 64, 64, 0.1);
+}
+
+.navbar .container{
+  padding: 15px 4em;
+  position: relative;
+}
+
+.navbar .logo {
+  color: #303030;
+  font-weight: 400;
+  font-size: 2.2em;
+}
+.navbar .nav-list{
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+} 
+.navbar .nav-list .nav-item{
+  padding: 0 10px;
+}
+
+.navbar .nav-list .nav-item .nav-link {
+  font-size: 1.6em;
+  color: #212121;
+  position: relative;
+}
+.nav-list .nav-item .nav-link::after{
+  transition: width .25s ease-in-out;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: .5px;
+  background-color: #0c856f;
+}
+
+.nav-list .nav-item .nav-link:hover::after{
+  width: 65%;
+}
+
+/* End Navbar */
+
+/* Start Main */
+
+.main{
+  min-height: 70vh;
+  padding: 4rem 0;
+}
+
+.main .container{
+  height: 100%;
+  justify-content: center;
+}
+
+main .content{
+  width: 720px;
+  position: relative;
+}
+
+main .content .image{
+  position: absolute;
+  top: -15%;
+  left: 60px;
+  width: 300px;
+  height: 300px;
+  background: url("images/eduardo-dutra-k6b53YWZI9I-unsplash@2x.png") no-repeat 40% 27%;
+  background-size: 143%;
+  border-radius: 3px;
+  box-shadow: 0 0 20px  rgba(0, 0, 0, 0.4);
+}
+
+main .content .text-holder{
+  flex-direction: column;
+  align-items: end;
+}
+
+main .content .text-holder h2 {
+  font-size: 6.5em;
+  font-weight: 300;
+}
+
+main .content .text-holder h1 {
+  font-size: 6.5em;
+  text-align: center;
+}
+
+main .content .text-holder p {
+  width: 100%;
+  background-color: #16E0BD;
+  color: #1C4B43;
+  font-size: 3.75em;
+  letter-spacing: 2px;
+  text-align: end;
+  padding: 7px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+/* End Main */
+
+/* End Header */
+
+/* Start What I Do */
+
+.what-i-do {
+  background: url("images/christopher-gower-m_HRfLhgABo-unsplash@2x.png") no-repeat center center/cover;
+  margin-bottom: 50px;
+}
+
+.layer{
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.what-i-do .layer .container{
+  width: 1000px;
+  flex-direction: column;
+  padding: 5em 4em
+}
+
+.what-i-do .layer .container h2{
+  font-size: 6em;
+  color: #14CFAE;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.what-i-do .layer .container h2::after{
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 40%;
+  height: 2px;
+  background-color: #9d9d9d
+}
+
+.what-i-do .layer .container .grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 3em;
+  margin: 5em 0;
+}
+
+.what-i-do .layer .container .grid h3{
+  font-size: 2.4em;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 1rem
+}
+
+.what-i-do .layer .container .grid p{
+  font-size: 1.8em;
+  color: #9d9d9d;
+  text-align: center;
+}
+
+.what-i-do .layer .container .btn{
+  font-size: 1.6em;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  background-color: #14CFAE;
+  color: #333333;
+  padding: 9px 4em;
+  margin-top: 2em;
+}
+
+/* End What I Do */
+
+
+/* Start Who I am */
+
+.about-me{
+  margin: 7em 0;
+  padding: 7em 0;
+}
+
+.about-me .container{
+  width: 1000px;
+  position: relative;
+}
+
+.about-me .content > *{
+  padding-left: 2rem;
+  color: #303030
+}
+
+.about-me .content h2{
+  font-size: 6em;
+}
+
+.about-me h4{
+  background-color: #16E0BD;
+  font-size: 2.1em;
+  font-weight: 400;
+  padding: .7rem 3rem;
+  border-radius: 3px;
+  margin: .6rem 0;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.about-me p{
+  width: 510px;
+  max-width: 100%;
+  margin: 1rem 0;
+  font-size: 1.6em;
+  font-weight: 100;
+}
+
+.about-me .image{
+  position: absolute;
+  top: 0;
+  right: 4em;
+  height: 390px;
+  width: 240px;
+  background: url('images/eduardo-dutra-Kqjc3vvgl1k-unsplash@2x.png') no-repeat 30% 80%;
+  background-size: 125%;
+  border-radius: 3px;
+  box-shadow: 0 0 20px  rgba(0, 0, 0, 0.4);
+}
+
+/* End Who I am */
+
+/* Start My Work */
+
+.my-work{
+  padding: 7rem 0;
+  background-color: #2E2E2E;
+  text-align: center;
+}
+
+.my-work h2{
+  font-size: 6em;
+  color: #fff;
+}
+
+.my-work p{
+  font-size: 2.4em;
+  color: #16E0BD;
+  margin: .5em 0 1em;
+  font-weight: 700;
+}
+
+.my-work .grid{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+
+.my-work .grid img{
+  transition: transform .25s ease-in-out;
+}
+
+.my-work .grid img:hover{
+  transform: scale(1.05);
+  border-radius: 3px;
+}
+
+/* End My Work */
+
+/* Start Footer */
+
+.footer{
+  padding: 4em 0;
+  background-color: #141414;
+  text-align: center;
+  color: #16E0BD;
+  font-size: 2.4em;
+}
+
+.footer h2{
+  font-size: 2.4rem
+}
+
+.footer .icon-holder{
+  margin-top: 2em;
+}
+
+.footer .icon-holder i{
+  margin: 0 .8em;
+}
+
+.footer .icon-holder i:nth-of-type(1){
+  margin-left: 0;
+}
+
+.footer .icon-holder i:last-of-type{
+  margin-right: 0;
+}
+
+/* End Footer */

@@ -1,0 +1,137 @@
+@media screen and (max-width: 850px) {
+  /* Start Main */
+  .main .content .text-holder{
+    align-items: center;
+    text-align: center;
+  }
+
+  main .content .text-holder p{
+    text-align: center;
+    width: fit-content;
+    padding: 0 4rem;
+  }
+
+  .header .main .image {
+    position: static;
+    margin: 2rem auto;
+  }
+
+  /* End Main */
+
+  /* Start What i do */
+
+  .what-i-do .layer .container .grid{
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 3rem;
+  }
+
+  .about-me .content > *{
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .about-me .image{
+    position: static;
+    width: 400px;
+    background-position: center 40%;
+    background-size: cover;
+    margin: 3rem auto;
+  }
+
+  .about-me .content p{
+    width: 100%;
+  }
+
+  /* End What i do */
+
+   /* Start My work */
+
+   .my-work .grid{
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    place-items: center !important;
+  }
+
+  .my-work .grid img:last-of-type{
+    grid-column: 2 / 3;
+  }
+
+  /* end My work */
+}
+
+@media screen and (max-width: 570px) {
+
+  /* Start Navbar */
+
+  .navbar .container{
+    flex-direction: column;
+  }
+
+  .navbar .container .nav-list .nav-item{
+    margin-top: 1rem;
+  }
+
+  /* End Navbar */
+
+  /* Start Main */
+  .main .content .text-holder{
+    align-items: center;
+    text-align: center;
+  }
+
+  main .content .text-holder h2 {
+    font-size: 5.8em;
+  }
+
+  main .content .text-holder h1{
+    font-size: 5.8em;
+  }
+
+  main .content .text-holder p{
+    text-align: center;
+    font-size: 3em;
+  }
+
+  .header .main .image {
+    position: static;
+    margin-top: 2rem;
+  }
+
+  /* End Main */
+
+  /* Start What I do */
+
+  .what-i-do .layer .container .grid{
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 3rem;
+  }
+
+  /* End What I do */
+
+  /* Start About me */
+
+  .about-me h4{
+    text-align: center;
+  }
+
+  .about-me .image{
+    position: static;
+    width: 100%;
+    background-position: center 40%;
+    background-size: cover;
+    margin: 3rem 0;
+  }
+
+  /* End About me */
+
+  /* Start My work */
+
+  .my-work .grid{
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+
+  /* end My work */
+}
